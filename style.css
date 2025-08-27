@@ -1,0 +1,144 @@
+/*
+Theme Name: Verboviba
+Theme URI: https://www.verboviva.com/
+Description: A child theme for Twenty Twenty-Five
+Author: Michael
+Author URI: https://www.verboviva.com/
+Template: twentytwentyfive
+Version: 1.0.1
+Text Domain: verboviba
+*/
+.whats_new {
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-wrap:nowrap;
+}
+.verboviva_seperator {height: 1px;}
+img{max-width:100%;height:auto}:where(.wp-site-blocks :focus){outline:0}form *{box-sizing:border-box}.reduce_margin_custom,.verbo_vivo_contact p,form>p{margin:0}form input,form textarea{background-color:#eaebe9;color:#252825;width:100%;border-radius:8px;border:none;padding:8px 15px;font-size:18px;margin-bottom:15px;font-family:Montserrat,sans-serif}textarea{margin-bottom:0;max-height:100px}form input:focus,form textarea:focus{outline:0;border:none}form input[type="submit"]{width:auto;background-color:#e1a536;color:#252825;margin-bottom:0;padding:8px 25px;cursor:pointer;transition:0.3s;font-weight:600}form input[type="submit"]:hover{background-color:#252825;color:#fff}.submit_button p{display:flex;flex-direction:row-reverse;margin:0}.submit_button{text-align:end}.lavel_of_spanish img,.vocabulary_topics img,.wp-block-button__link{transition:0.3s}.wp-block-button__link:hover{color:#fff;border-color:#252825!important;background-color:#252825!important}.footer_menu ul li a:hover,.header_menu .current-menu-item,.header_menu ul li a:hover{color:#e1a536!important;text-decoration:none}.main_header .custom-logo{max-width:200px}.header_menu ul li a{font-weight:500;text-decoration:none;transition:0.3s;padding:10px 0}.header_menu .btn_contact a{background-color:#e1a536;color:#252825!important;border-radius:10px;padding:10px 25px!important}.header_menu .btn_contact a:hover{color:#fff!important;background-color:#252825!important}.header_menu ul li ul{border-radius:3px;gap:0!important;box-shadow:0 6px 20px #0106210f}.header_menu ul li ul li:not(:last-child){border-bottom:1px solid #00000026}.is-menu-open li ul li{border-bottom:none}.header_menu ul li ul li a{font-size:14px!important;padding-left:10px;padding-right:10px}.is-menu-open .header_menu,.is-menu-open .header_menu>li,.is-menu-open .header_menu>li ul,.is-menu-open .wp-block-navigation__responsive-container-content{align-items:flex-start!important;padding:10px}.whats_new,.wpcf7{width:100%}.subscrive_form form input[type="submit"]{background-color:inherit;border:1px solid #e1a536;color:#e1a536;transition:0.3s}.subscrive_form form input[type="submit"]:hover{background-color:#e1a536;color:#252825}.footer_menu ul li a:hover{transition:0.3s}.verbo_viba_hero{position:relative}.verbo_viba_hero::after,.verbo_viba_hero::before{position:absolute;content:"";top:8%;background-repeat:no-repeat;background-size:contain}.verbo_viba_hero::after{width:280px;left:3%;height:120px;background-image:url(https://www.verboviva.com/wp-content/uploads/2025/02/Open_Book_Icon.svg)}.verbo_viba_hero::before{width:200px;height:170px;right:0;background-image:url(https://www.verboviva.com/wp-content/uploads/2025/02/Chat_Icon_Emblem.svg)}.why_verbo_viba{clip-path:polygon(0% 0%,100% 0%,100% 89%,76% 90%,82% 100%,54% 91%,0% 90%);background-color:#eaebe9}.why_verbo_viba_02{clip-path:polygon(0% 0%,100% 0%,100% 89%,50% 90%,25% 100%,30% 90%,0% 90%);background-color:#fccd77}.lavel_of_spanish img:hover,.vocabulary_topics img:hover{scale:1.05}.vocabulary_topics a{text-decoration:none;transition:0.3s}.subscrive_form form .wpcf7-response-output{color:#fff}.grammar_vocabulary .t-panel-container{border:none!important}.grammar_vocabulary .t-btn-container{gap:15px}.grammar_vocabulary .t-btn-container button{box-shadow:none;border-top:none;border-left:none;border-right:none}.dictionary .gspb_button_wrapper{width:100%}.blog_search_form button{padding:8px 20px;min-width:125px;border-top-right-radius:10px!important;border-bottom-right-radius:10px!important;color:#252825!important}.blog_search_form form{max-width:450px;margin-left:auto}.wp-block-latest-posts__featured-image{margin-right:60px!important}.wp-block-latest-posts__post-title{display:block;font-size:24px;font-weight:600;margin-bottom:8px;color:#252825}.wp-block-latest-posts__post-excerpt{margin-top:30px;font-style:italic;color:#7F6E53;margin-bottom:0}.reading-time{margin:0;font-style:normal;margin-top:20px;display:flex;align-items:center;gap:10px;color:#252825}.wp-block-latest-posts__post-author{display:inline-block;position:relative;margin-right:30px;font-size:18px}.wp-block-latest-posts__post-date{display:inline-block;font-size:18px}.wp-block-latest-posts__post-author::after{content:"";width:6px;height:6px;border-radius:50%;top:8px;right:-26px;margin-right:8px;background-color:#252825;position:absolute}.gspb-dynamic-title-element{margin:0!important}.wp-block-post-excerpt{margin-top:10px!important}.gsbp-3118706{display:inline-block}.post_bottom_info{display:flex;align-items:center;justify-content:space-between}.post_bottom_info .reading-time{margin-top:0}.post_bottom_info .author-box a{display:flex}.post_bottom_info .author-box img{border-radius:50%}.nav-links{margin-top:40px;display:flex;align-items:center;justify-content:center;gap:10px}.nav-links .page-numbers{color:#252825;width:30px;height:30px;border-radius:3px;margin:0;font-size:18px;display:flex;align-items:center;justify-content:center}.nav-links .page-numbers.prev{width:76px}.nav-links .page-numbers.next{width:45px}.nav-links .page-numbers.current{background-color:#FAB73C}.table_of_content{min-width:300px}.table_of_content .gs-autolist{margin:0;background-color:#FFF8EC;padding:25px 20px}@media screen and (max-width:1280px){img.custom-logo{max-width:180px}.header_menu ul{gap:0 15px!important}}@media screen and (max-width:1100px){.verbo_viba_hero::after,.verbo_viba_hero::before{content:none}}@media (min-width:1024px) and (max-width:1250px){.why_verboViva p{font-size:14px}.wp-block-group.is-vertical.is-content-justification-center{margin-top:70px!important}}@media screen and (max-width:1024px){.md-p-y-40{padding-top:35px!important;padding-bottom:40px!important}.md-p-x-0{padding-left:0!important;padding-right:0!important}.md-p-x-15{padding-left:15px!important;padding-right:15px!important}.md-pt-30{padding-top:30px!important}.md-pb-30{padding-bottom:30px!important}.md-pt-20{padding-top:20px!important}.md-pb-20{padding-bottom:20px!important}.md-pt-40{padding-top:40px!important}.md-pb-40{padding-bottom:40px!important}.wp-block-navigation__responsive-container-open:not(.always-shown){display:block}.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content{display:none}.lavel_of_spanish img{max-width:120px}.activity_buttons .wp-block-button{width:46%}.activity .activity_buttons a{width:100%;padding:12px 20px!important}.have_a_question h2,.have_a_question p,.resources,.where_to_start{text-align:center}.where_to_start .where_to_start_buttons{justify-content:center}.vocabulary_topics img{max-width:150px}.vocabulary_topics h2{margin-bottom:30px!important}.vocabulary_topics .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:45%!important}.resources h2{margin-bottom:0!important}}@media (min-width:650px) and (max-width:1024px){.why_verboViva .is-layout-flex{flex-wrap:wrap!important}.why_verboViva .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:47%!important}}@media screen and (max-width:781px){.wp-block-column.footer_menu.is-layout-flow.wp-block-column-is-layout-flow{flex-basis:45%!important}.object_fit_content .wp-block-cover__image-background{max-width:320px;margin:0 auto}.object_fit_content .wp-block-cover__inner-container{max-width:270px}.object_fit_content .wp-block-cover__inner-container .wp-block-group{margin-top:30px!important}.object_fit_content{min-height:360px!important}.where_to_start_right_image{display:none!important}.verboviva_footer,.verboviva_footer figure{text-align:center}.verboviva_footer nav,.verboviva_footer nav ul{align-items:center}.submit_button p{justify-content:center}.submit_button p .wpcf7-spinner{display:none}.need_help{text-align:center}.our_story h1{margin-bottom:20px!important}.our_story .wp-block-greenshift-blocks-image{margin-bottom:0!important}.our_mission{text-align:center;min-height:300px}.our_mission img{aspect-ratio:16 / 9;display:block;min-height:250px}.our_mission_content{order:2}.our_mission_image{order:1}.contact_us{text-align:center}.spanish_proficiency_tab figure{max-width:400px;margin:0 auto}.grammar_vocabulary .wp-block-button{width:100%!important}.grammar_vocabulary h2{margin-bottom:20px!important}.spanish_proficiency .wp-block-columns{text-align:center}.spanish_proficiency .spanish_proficiency_item{padding:20px 30px!important}.explore_resources{text-align:center}}@media screen and (max-width:600px){.header_menu ul li ul li:not(:last-child){border:none!important}.header_menu ul li ul li a{font-size:13px!important}.site-main-heading{font-size:30px}.site-main-heading{margin-bottom:15px!important;font-size:30px}.wp-block-button__link{line-height:20px}.dictionary .wp-block-greenshift-blocks-row-column{flex-direction:column}}@media screen and (max-width:400px){.where_to_start .where_to_start_buttons .wp-block-button{width:100%!important}.vocabulary_topics img{max-width:120px}.vocabulary_topics .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:44%!important}}.object_fit_content{align-items:start!important}.object_fit_content img{object-fit:contain!important}@media screen and (min-width:1024px){a.lavel_of_spanish:nth-child(2){margin-top:70px}}.our_team h6{margin:0 auto}.our_team .member_title p{margin:0;margin-top:5px}a.level_of_spanish.a1{width:150px;height:135px}a.level_of_spanish.a2{width:150px;height:133px}a.level_of_spanish.b1{width:150px;height:143px}a.level_of_spanish.b2{width:150px;height:78px}a.level_of_spanish.c1{width:150px;height:142px}a.level_of_spanish.c2{width:150px;height:168px}a.level_of_spanish{background-size:contain;text-align:center;display:flex;align-items:center;justify-content:center}a.level_of_spanish{transition:0.3s;font-size:26px;font-weight:700;color:#252825}a.level_of_spanish:hover{scale:1.05}.spanish_proficiency_tab .t-panel-container{padding:0;margin-bottom:0}.spanish_proficiency_tab .wp-container-core-columns-is-layout-1{margin-bottom:0}.spanish_proficiency_tab button{border:1px solid #e1a536!important}.spanish_proficiency_tab #gspb-tab-item-btn-gsbp-1edabed-0{background-color:#fff8ec}.spanish_proficiency_tab #gspb-tab-item-btn-gsbp-1edabed-1{background-color:#fef1d8}.spanish_proficiency_tab #gspb-tab-item-btn-gsbp-1edabed-2{background-color:#fee7c0}.spanish_proficiency_tab #gspb-tab-item-btn-gsbp-1edabed-3{background-color:#fddca5}.spanish_proficiency_tab #gspb-tab-item-btn-gsbp-1edabed-4{background-color:#fccd77}.spanish_proficiency_tab #gspb-tab-item-btn-gsbp-1edabed-5{background-color:#fab73c}.spanish_proficiency_tab button.t-btn:hover,.spanish_proficiency_tab button.t-btn.active{color:#fff;background-color:#252825!important;border-color:#252825!important}
+.activities-section {margin: 0;padding-top: 60px;}
+.activities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.activities-grid .activity-card {
+    background-color: #fff8ec;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.activities-grid h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+.activities-grid .activity-excerpt {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 18px;
+}
+.activities-grid .activity-image {
+    position: relative;
+    display: flex;
+}
+.activities-grid .activity-image img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+}
+.activities-grid .activity-categories {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    font-size: 14px;
+}
+.activities-grid .activity-categories .taxonomies {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e1a536;
+    padding: 5px;
+    background-color: #fff8ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activity-content {
+    padding: 25px;
+}
+.activities-grid .activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activities-grid .activity-icon img {max-width: 20px;}
+.activity-filters-bar {display: grid; grid-template-columns: 1fr 1fr; gap: 20px;margin-top: 50px;}
+.activity-filters.domain button {border: 1px solid transparent;}
+.activity-filters {display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: end;}
+.activity-filters button {padding: 10px 15px; border-radius: 10px; background-color: var(--custom-color); min-width: 140px;display: flex;gap: 8px; align-items: center;justify-content: center;min-height: 36px;cursor: pointer;border: 1px solid #E1A536;font-size: 18px;}
+.activity-filters button:hover, .activity-filters button.active {background-color: #252825; color: #fff; border-color: #252825;}
+.activity-filters button:hover img, .activity-filters button.active img {filter: invert(1);}
+.filter-title {margin: 0; font-size: 1.5rem;}
+.activity-filters.level button {min-width: 70px;}
+.activity-filters.part-of-speech button {min-width: 175px;}
+.styled-pagination {display: flex;align-items: center;justify-content: center;gap: 7px;margin-top: 30px;}
+.pagination-btn {width: 35px;height: 35px;border-radius: 50%;display: flex;align-items: center;justify-content: center;background-color: #e1a536; color: #252825;cursor: pointer;transition: 0.3s;border: none; font-size: 18px;}
+.pagination-btn:hover, .pagination-btn.active {background-color: #252825; color: #fff;}
+@media screen and (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .activity-filters-bar {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+    .activity-filters {
+        justify-content: center;
+    }
+    .filter-title {
+        text-align: center;
+    }
+    .activities-section {
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.vocabulary_lists_item:hover {
+    scale: 1.05;
+}
+
+.vocabulary_lists_item {
+    transition: 0.3s;
+}
+.accordion-section {margin-bottom: 12px;}
+.accordion-header {
+    padding: 1rem 2.25rem;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    font-size: 22px;
+    text-align: center;
+    color: #3b4832;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 12px;
+}
+.accordion-content.open {padding: 12px;max-height: 170px;}
+.accordion-content ul {margin: 0;padding-left: 20px;}
+.accordion-content ul li {margin-bottom: 4px;}
+.current-page-link {font-weight: 600;}
