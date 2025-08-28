@@ -13,43 +13,49 @@
   // 01. PAGINATION
   // =======================
   function loadActivities(page, instance) {
-  const $section = $("#activities-section-" + instance);
-  const taxonomy = $section.data("taxonomy") || "";
-  const termId = $section.data("term") || 0;
-  const postsPerPage = $section.data("posts-per-page") || 6;
+    const $section = $("#activities-section-" + instance);
+    const postsPerPage = $section.data("posts-per-page") || 6;
+    const filterBar = $section.find(".filter_wrapper").length > 0;
 
-  var $results = $("#styled-activity-results-" + instance);
+    var $results = $("#styled-activity-results-" + instance);
 
-  $.ajax({
-    url: verboviva_activities.ajaxurl,
-    type: "POST",
-    data: {
-      action: "styled_filter_activities",
-      taxonomy: taxonomy,
-      term_id: termId,
-      posts_per_page: postsPerPage,
-      instance: instance,
-      pagination: true,
-      page: page,
-      _ajax_nonce: verboviva_activities.nonce,
-    },
-    beforeSend: function () {
-      $results.find(".activities-grid").addClass("preloader");
-    },
-    success: function (response) {
-      $results.fadeOut(150, function () {
-        $results.html(response).fadeIn(150);
+    // collect filters
+    var filters = {};
+    $section.find(".activity-filter").each(function () {
+      var val = $(this).val();
+      var tax = $(this).data("taxonomy");
+      if (val) {
+        filters[tax] = val;
+      }
+    });
+
+    $.ajax({
+      url: verboviva_activities.ajaxurl,
+      type: "POST",
+      data: {
+        action: "styled_filter_activities",
+        posts_per_page: postsPerPage,
+        instance: instance,
+        pagination: true,
+        page: page,
+        filter_bar: filterBar,
+        filters: filters, // ✅ send filters
+        _ajax_nonce: verboviva_activities.nonce,
+      },
+      beforeSend: function () {
+        $results.find(".activities-grid").addClass("preloader");
+      },
+      success: function (response) {
+        $results.fadeOut(150, function () {
+          $results.html(response).fadeIn(150);
+        });
+      },
+      error: function () {
         $results.find(".activities-grid").removeClass("preloader");
-      });
-    },
-    error: function () {
-      $results.find(".activities-grid").removeClass("preloader");
-      console.error("Error loading activities.");
-    }
-  });
-}
-
-
+        console.error("Error loading activities.");
+      },
+    });
+  }
 
   $(document).on("click", ".pagination-btn", function () {
     const instance = $(this).closest(".styled-pagination").data("instance");
@@ -147,7 +153,6 @@
   });
 })(jQuery);
 
-
-jQuery(document).ready(function($){
-  $('.activities-preloader').hide(); // ensure hidden once posts rendered 
+jQuery(document).ready(function ($) {
+  $(".activities-preloader").hide(); // ensure hidden once posts rendered
 });
