@@ -22,14 +22,29 @@ function activities_stylish_shortcode($atts)
         'posts_per_page' => -1,
         'pagination'     => false,
         'filter_bar'     => false,
+        'id'             => '',
     ), $atts, 'activities');
 
     $atts['instance']   = $instance;
 
     ob_start();
+    // echo '<div class="activities-section" id="activities-section-' . esc_attr($atts['instance']) . '" data-posts-per-page="' . esc_attr($atts['posts_per_page']) . '">';
+    // echo '  <div class="styled-activity-results" id="styled-activity-results-' . esc_attr($atts['instance']) . '">';
+    // echo '  <div class="activities-preloader" id="activities-preloader-' . esc_attr($atts['instance']) . '" style="display:flex;">';
+    // echo '      <div class="spinner"></div>';
+    // echo '  </div>';
+    // echo activities_stylish_render($atts);
+    // echo '  </div>';
+    // echo '</div>';
+
     echo '<div class="activities-section" id="activities-section-' . esc_attr($atts['instance']) . '" data-posts-per-page="' . esc_attr($atts['posts_per_page']) . '">';
-    echo '  <div class="styled-activity-results" id="styled-activity-results-' . esc_attr($atts['instance']) . '">';
+    echo '  <div class="styled-activity-results-wrapper">';
+    echo '      <div class="activities-preloader" id="activities-preloader-' . esc_attr($atts['instance']) . '">';
+    echo '          <div class="spinner"></div>';
+    echo '      </div>';
+    echo '      <div class="styled-activity-results" id="styled-activity-results-' . esc_attr($atts['instance']) . '">';
     echo activities_stylish_render($atts);
+    echo '      </div>';
     echo '  </div>';
     echo '</div>';
     $output = ob_get_clean();
@@ -51,6 +66,7 @@ function activities_stylish_render($atts)
         'page'           => 1,
         'tax_query'      => array(),
         'filters'        => array(),
+        'id'             => '',
     ), $atts);
 
     $paged = max(1, (int) $atts['page']);
@@ -81,7 +97,11 @@ function activities_stylish_render($atts)
         'paged'          => $paged,
     );
 
-    if (!empty($atts['tax_query'])) {
+    if (!empty($atts['id'])) {
+        $ids = array_map('intval', explode(',', $atts['id']));
+        $args['post__in'] = $ids;
+        $args['orderby'] = 'post__in'; // keep order of IDs
+    } elseif (!empty($atts['tax_query'])) {
         $args['tax_query'] = $atts['tax_query'];
     }
 
@@ -211,6 +231,7 @@ function ajax_styled_filter_callback()
         'pagination'     => isset($_POST['pagination']) ? filter_var($_POST['pagination'], FILTER_VALIDATE_BOOLEAN) : false,
         'page'           => isset($_POST['page']) ? (int) $_POST['page'] : 1,
         'filter_bar'     => isset($_POST['filter_bar']) ? filter_var($_POST['filter_bar'], FILTER_VALIDATE_BOOLEAN) : false,
+        'id' => isset($_POST['id']) ? sanitize_text_field($_POST['id']) : '',
         'filters'        => array(),
     );
 
