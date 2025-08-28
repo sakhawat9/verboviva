@@ -24,14 +24,14 @@ function verboviva_enqueue_styles()
 
     wp_enqueue_script('jquery');
     wp_enqueue_script(
-        'child-script',
-        get_stylesheet_directory_uri() . '/child.min.js',
+        'verboviva',
+        get_stylesheet_directory_uri() . '/verboviva.js',
         array('jquery'), // Add 'jquery' if using it
         '1.0.0',
         true // Load in footer
     );
 
-    wp_localize_script('child-script', 'activities_ajax_object', array(
+    wp_localize_script('verboviva', 'verboviva_activities', array(
         'ajaxurl' => admin_url('admin-ajax.php'),
         'nonce'   => wp_create_nonce('activities_nonce')
     ));
