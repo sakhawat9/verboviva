@@ -91,7 +91,6 @@ function activities_stylish_render($atts)
     $nonce = wp_create_nonce('activities_nonce');
 
     // ==== FILTER BAR ====
-    // echo 'Hello world';
     if ($atts['filter_bar']) {
         echo '<div class="filter_wrapper" data-instance="' . esc_attr($atts['instance']) . '" data-filter-bar="' . ($atts['filter_bar'] ? 'true' : 'false') . '">';
         echo '<input type="hidden" class="activities-nonce" value="' . esc_attr($nonce) . '">';
@@ -131,7 +130,6 @@ function activities_stylish_render($atts)
                         array('level' => $level_terms[0]->slug),
                         $base_url
                     );
-
                     echo '<div class="activity-categories">';
                     echo '<a class="taxonomies" href="' . esc_url($custom_link) . '">' . esc_html($level_terms[0]->name) . '</a>';
                     echo '</div>';
@@ -165,12 +163,9 @@ function activities_stylish_render($atts)
                 }
             }
             $base_url = get_permalink(get_page_by_path('spanish/all-activities'));
-            // 👆 change 'spanish/all-activities' to your actual page slug
-
             if ($icon_url && ! is_wp_error($term)) {
-                $taxonomy  = $term->taxonomy;  // e.g. "domain"
-                $slug   = $term->slug;   // e.g. 23
-
+                $taxonomy  = $term->taxonomy;
+                $slug   = $term->slug;
                 $icon_link = add_query_arg(
                     array($taxonomy => $slug),
                     $base_url
