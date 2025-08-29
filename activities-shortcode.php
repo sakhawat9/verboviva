@@ -30,9 +30,6 @@ function activities_stylish_shortcode($atts)
     ob_start();
     echo '<div class="activities-section" id="activities-section-' . esc_attr($atts['instance']) . '" data-posts-per-page="' . esc_attr($atts['posts_per_page']) . '">';
     echo '  <div class="styled-activity-results-wrapper">';
-    echo '      <div class="activities-preloader" id="activities-preloader-' . esc_attr($atts['instance']) . '">';
-    echo '          <div class="spinner"></div>';
-    echo '      </div>';
     echo '      <div class="styled-activity-results" id="styled-activity-results-' . esc_attr($atts['instance']) . '">';
     echo activities_stylish_render($atts);
     echo '      </div>';
